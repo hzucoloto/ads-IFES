@@ -1,0 +1,15 @@
+# Executáveis e arquivos gerados na compilação de C
+*.o
+*.out
+*.exe
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema e editor
+.DS_Store
+Thumbs.db
+
+intro-programacao/hello
