@@ -1,0 +1,24 @@
+/* front-end-1/semana04/css/style.css
+   Só o mínimo desta semana. O CSS de verdade começa na semana 5. */
+
+/* Menu da videoaula: lista vertical vira barra horizontal */
+nav ul {
+  display: flex;     /* itens lado a lado */
+  list-style: none;  /* tira as bolinhas */
+  gap: 8px;          /* espaço entre os itens */
+  padding: 0;        /* remove o recuo padrão da <ul> */
+}
+
+/* Nome de classe diz o PAPEL do elemento, não a aparência (evite "caixa-azul") */
+.card-programa {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+/* Imagem nunca passa da largura do card.
+   Melhor do que o style="width: 400px" inline da videoaula */
+.card-programa img {
+  max-width: 100%;
+  height: auto;
+}
