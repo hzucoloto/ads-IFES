@@ -1,1 +1,1 @@
-# Fundamentos TI
+- pipeline.py: simula um pipeline CI/CD (build, testes, segurança, deploy) que bloqueia o deploy se uma etapa falhar.
