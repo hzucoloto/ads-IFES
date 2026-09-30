@@ -1,1 +1,1 @@
-# Front End I
+- semana04/: página da Incubadora com HTML semântico (landmarks, article/section, figure, time, address, abbr) e exercício de "sopa de divs" para tags semânticas.
