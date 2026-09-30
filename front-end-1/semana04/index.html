@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Núcleo Incubador do Ifes de Alegre</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- defer: o navegador só executa o JS depois de ler o HTML inteiro -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- LANDMARK 1: header = abertura da página (título + apresentação + menu) -->
+  <header>
+    <h1>Incubadora do Ifes de Alegre</h1>
+    <p>Ambiente de inovação para transformar ideias em negócios de impacto no Espírito Santo.</p>
+
+    <!-- LANDMARK 2: nav = navegação principal. aria-label nomeia a região para leitores de tela -->
+    <nav aria-label="Principal">
+      <ul>
+        <!-- os "#..." levam aos id's abaixo (âncoras: assunto da semana 7) -->
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- LANDMARK 3: main = conteúdo principal. Só UM por página, fora de header/footer/aside -->
+  <main>
+
+    <!-- section: agrupamento temático que TEM título (h2) -->
+    <section id="programas">
+      <h2>Programas e Trilhas</h2>
+
+      <!-- article: autocontido. Colado em outro site, ainda faria sentido -->
+      <article class="card-programa">
+        <h3>Pré-incubação</h3>
+        <p>Transformação de ideias em protótipos de baixa fidelidade e MVP.</p>
+
+        <!-- figure + figcaption: imagem e legenda como uma unidade -->
+        <figure>
+          <!-- Coloque uma foto sua em image/incubadora.jpeg. Sem ela, você vê o texto do alt. -->
+          <img src="image/incubadora.png" alt="Logo da incubadora do Ifes de Alegre">
+          <figcaption>Figura 1: Logo da incubadora.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="eventos">
+      <h2>Próximo evento</h2>
+      <article class="card-programa">
+        <h3>Demo Day</h3>
+        <!-- data fictícia, só para o exemplo. datetime = formato que máquinas entendem (AAAA-MM-DD) -->
+        <p>Data: <time datetime="2026-11-20">20 de novembro de 2026</time></p>
+        <!-- abbr: mostra a explicação da sigla ao passar o mouse -->
+        <p>Apresentação das startups do <abbr title="Instituto Federal do Espírito Santo">Ifes</abbr>.</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- LANDMARK 4: footer = encerramento (contato + créditos) -->
+  <footer id="contato">
+    <!-- address: contato da organização (e-mail fictício) -->
+    <address>
+      Ifes — Campus de Alegre, Alegre/ES<br>
+      <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+    </address>
+    <p>Última atualização: <time datetime="2026-09-29">29/09/2026</time></p>
+    <p>&copy; 2026 Núcleo Incubador do Ifes de Alegre</p>
+  </footer>
+
+</body>
+</html>
