@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio — Laboratório HTTP</title>
+  <!-- Esta linha gera uma requisição HTTP extra: o navegador vai pedir o CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Restaurante Sabor Capixaba</h1>
+    <p>Laboratório HTTP: faça um pedido e veja a resposta do servidor.</p>
+  </header>
+
+  <main>
+    <section class="pedidos">
+      <button id="btn-existe">Pedir o cardápio (pratos.json)</button>
+      <button id="btn-nao-existe">Pedir sobremesas (sobremesas.json)</button>
+    </section>
+
+    <section class="resposta">
+      <h2>Resposta do servidor</h2>
+      <pre id="saida">Nenhum pedido feito ainda.</pre>
+    </section>
+  </main>
+
+  <!-- Mais uma requisição: o navegador vai pedir o JS -->
+  <script src="script.js"></script>
+</body>
+</html>
