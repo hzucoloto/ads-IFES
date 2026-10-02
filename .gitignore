@@ -12,4 +12,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Ignorando programas em C
 intro-programacao/hello
+intro-programacao/consumo
+intro-programacao/retangulo 
+intro-programacao/estacionamento
