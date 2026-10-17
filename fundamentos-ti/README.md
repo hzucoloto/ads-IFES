@@ -1,2 +1,4 @@
 - `dikw.py`: simula a pirâmide DIKW (Semana 1), transformando dados soltos em informação e aplicando uma regra de produção SE-ENTÃO para representar conhecimento.
 
+- `tipos_si.py`: simula a pirâmide de Sistemas de Informação (TPS, SIG, SAD e SAE) usando as mesmas vendas de uma rede de farmácias (semana 2)
+
