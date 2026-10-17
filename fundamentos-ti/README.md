@@ -1,1 +1,2 @@
-- pipeline.py: simula um pipeline CI/CD (build, testes, segurança, deploy) que bloqueia o deploy se uma etapa falhar.
+- `dikw.py`: simula a pirâmide DIKW (Semana 1), transformando dados soltos em informação e aplicando uma regra de produção SE-ENTÃO para representar conhecimento.
+
