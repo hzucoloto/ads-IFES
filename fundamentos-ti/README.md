@@ -2,3 +2,4 @@
 
 - `tipos_si.py`: simula a pirâmide de Sistemas de Informação (TPS, SIG, SAD e SAE) usando as mesmas vendas de uma rede de farmácias (semana 2)
 
+- `seguranca_cia.py`: simula integridade (hash SHA-256) e confidencialidade (cifra de César). Semana 3, Segurança em SI.
