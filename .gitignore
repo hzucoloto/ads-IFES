@@ -13,12 +13,4 @@ __pycache__/
 Thumbs.db
 
 # Ignorando programas em C
-intro-programacao/hello
-intro-programacao/consumo
-intro-programacao/retangulo 
-intro-programacao/estacionamento
-intro-programacao/desconto
-intro-programacao/retangulo-2
-intro-programacao/triangulo
-intro-programacao/saldo
-
+intro-programacao/cafe
