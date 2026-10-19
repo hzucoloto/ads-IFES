@@ -6,3 +6,5 @@
 
 - `compra.c` – Semana 4: caixa de mercado (preço − desconto) com `scanf`/`printf` e saída em `%.2f`.
 
+- `constantes_escopo.c`: Aula 5. Simulação de caixa de mercado que demonstra constantes (`#define` e `const`) e escopo de variáveis (local, global e estática), usando uma senha de atendimento estática.
+
