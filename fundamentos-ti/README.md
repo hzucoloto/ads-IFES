@@ -4,4 +4,8 @@
 
 - `seguranca_cia.py`: simula integridade (hash SHA-256) e confidencialidade (cifra de César). Semana 3, Segurança em SI.
 
-`unidades_medida.py`: Bit × byte, base 10 (KB) × base 2 (KiB), Mbps → MB/s e tempo de download 
+- `unidades_medida.py`: Bit × byte, base 10 (KB) × base 2 (KiB), Mbps → MB/s e tempo de download 
+
+- `tres_camadas.py` — Simulação da arquitetura em 3 camadas (apresentação, aplicação e dados) com uma livraria online. Semana 5: Infraestrutura de TI.
+
+- `matriz_riscos.py`: prioriza riscos de projeto por probabilidade × impacto e sugere a estratégia (evitar, mitigar, transferir ou aceitar). Semana 7, Análise e Planejamento.
