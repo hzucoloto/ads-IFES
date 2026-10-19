@@ -4,3 +4,5 @@
 
 - `variaveis.c` — Semana 3: tipos de dados (int, float, char, cadeia, bool), declaração, inicialização, atribuição e a pegadinha da divisão inteira.
 
+- `compra.c` – Semana 4: caixa de mercado (preço − desconto) com `scanf`/`printf` e saída em `%.2f`.
+
