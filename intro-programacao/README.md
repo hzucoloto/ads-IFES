@@ -8,3 +8,8 @@
 
 - `constantes_escopo.c`: Aula 5. Simulação de caixa de mercado que demonstra constantes (`#define` e `const`) e escopo de variáveis (local, global e estática), usando uma senha de atendimento estática.
 
+### Semana 8: Estruturas Condicionais (Parte 2)
+- caixa.c: exemplo da aula; desconto e forma de pagamento com switch, && , || e !
+- dias.c: mostra o dia da semana a partir de um número (1 a 7) usando switch-case
+- ordena.c: mostra três inteiros em ordem crescente usando else if e condições compostas (&&)
+- calculadora.c: calculadora das 4 operações básicas com switch-case; trata divisão por zero
