@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cantina da Ana — Cardápio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <h1 id="titulo">Cantina da Ana</h1>
+    <!-- Botão do modo noturno (desafio da apostila) -->
+    <button id="btn-tema" class="btn">🌙 Modo noturno</button>
+  </header>
+
+  <main class="conteudo">
+    <!-- Seção 1: o JS troca o texto deste parágrafo -->
+    <section class="cartao">
+      <h2>Prato do dia</h2>
+      <p id="prato-do-dia">Moqueca capixaba</p>
+      <button id="btn-proximo" class="btn">Ver outro prato</button>
+    </section>
+
+    <!-- Seção 2: o JS seleciona TODOS os itens .promo de uma vez -->
+    <section class="cartao">
+      <h2>Cardápio</h2>
+      <ul class="lista-pratos">
+        <li class="prato">Moqueca capixaba — R$ 48</li>
+        <li class="prato promo">Feijoada — R$ 39</li>
+        <li class="prato">Torta capixaba — R$ 45</li>
+        <li class="prato promo">Bobó de camarão — R$ 42</li>
+      </ul>
+      <button id="btn-promos" class="btn">Destacar promoções</button>
+    </section>
+  </main>
+
+  <!-- Script no FIM do body: quando ele roda, todos os elementos acima já existem -->
+  <script src="js/script.js"></script>
+</body>
+</html>

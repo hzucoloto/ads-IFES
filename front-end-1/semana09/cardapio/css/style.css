@@ -1,0 +1,71 @@
+/* ---- Variáveis de cor ---- */
+:root {
+  --verde: #1a5e3a;
+  --fundo: #f4f7f6;
+  --texto: #222;
+  --cartao: #fff;
+}
+
+/* ---- Base ---- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: var(--verde);
+  color: #fff;
+}
+
+.topo h1 { margin: 0; font-size: 1.4rem; }
+
+.conteudo {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.cartao {
+  background: var(--cartao);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--verde);
+  color: #fff;
+  cursor: pointer;
+}
+
+.topo .btn { background: #fff; color: var(--verde); }
+
+.lista-pratos { padding-left: 1.2rem; }
+
+/* ---- Classes que o JavaScript liga e desliga ---- */
+/* O CSS define as aparências possíveis; o JS só escolhe qual vale agora. */
+
+/* Modo noturno: em vez de mudar cada cor, redefinimos as variáveis */
+body.escuro {
+  --fundo: #121614;
+  --texto: #e8e8e8;
+  --cartao: #1e2622;
+}
+
+/* Destaque das promoções */
+.destaque {
+  background: #fff3b0;
+  color: #222;
+  font-weight: bold;
+}
