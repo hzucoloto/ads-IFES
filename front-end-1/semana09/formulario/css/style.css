@@ -1,0 +1,65 @@
+:root { /* Variáveis CSS utilizadas no tema */
+  --cor: #0b7a3b;       /* Cor principal (botões e títulos) */
+  --borda: #e5e7eb;     /* Cor de bordas suaves */
+  --fundo: #f7f7f8;     /* Cor de fundo da página */
+}
+
+* { box-sizing: border-box; } /* Inclui bordas e paddings no cálculo de largura/altura */
+
+body { /* Estilos gerais do corpo da página */
+  margin: 0; /* Remove margens padrão do body */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; /* Fonte legível e padrão de sistema */
+  background: var(--fundo); /* Aplica a cor de fundo definida na variável */
+  display: grid; /* Centraliza o conteúdo usando grid */
+  place-items: center; /* Centraliza horizontal e verticalmente */
+  min-height: 100vh; /* Ocupa no mínimo a altura inteira da janela */
+}
+
+.card { /* Container do formulário */
+  background: #fff; /* Fundo branco */
+  width: min(420px, 92vw); /* Limita a largura a 420px ou 92% da largura da tela */
+  border: 1px solid var(--borda); /* Borda sutil */
+  border-radius: 10px; /* Cantos arredondados */
+  padding: 1.25rem; /* Espaçamento interno */
+}
+
+h1 { /* Título do formulário */
+  margin: 0 0 .75rem; /* Remove margem superior e adiciona inferior */
+  color: var(--cor); /* Cor do título */
+  font-size: 1.25rem; /* Tamanho de fonte */
+}
+
+label { /* Rótulos dos campos */
+  display: block; /* Quebra linha antes/depois do label */
+  margin: .6rem 0 .25rem; /* Espaçamento externo (cima/lados/baixo) */
+  font-weight: 600; /* Deixa o texto ligeiramente mais forte */
+}
+
+input { /* Campos de texto */
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: .6rem .7rem; /* Espaçamento interno (vertical/horizontal) */
+  border: 1px solid var(--borda); /* Borda sutil */
+  border-radius: 8px; /* Cantos arredondados */
+  font-size: 1rem; /* Tamanho de fonte padrão */
+}
+
+button { /* Botão de envio */
+  margin-top: .9rem; /* Espaço acima do botão */
+  width: 100%; /* Botão ocupa toda a largura do card */
+  padding: .7rem 1rem; /* Espaçamento interno */
+  border: none; /* Remove borda padrão */
+  border-radius: 8px; /* Cantos arredondados */
+  background: var(--cor); /* Cor de fundo do botão */
+  color: #fff; /* Texto branco */
+  font-weight: 600; /* Texto mais forte */
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+}
+
+#mensagem { /* Área de feedback ao usuário */
+  margin-top: .8rem; /* Espaço acima da mensagem */
+  font-weight: 600; /* Destaque no texto */
+  text-align: center; /* Centraliza o feedback */
+}
+
+.sucesso { color: #0b7a3b; } /* Cor de texto para mensagens de sucesso */
+.erro { color: #b91c1c; }    /* Cor de texto para mensagens de erro */

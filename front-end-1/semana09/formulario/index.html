@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página para português do Brasil -->
+<head> <!-- Início do cabeçalho (metadados e links) -->
+  <meta charset="UTF-8" /> <!-- Usa codificação UTF-8 (acentos corretos) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Ajuste responsivo em telas móveis -->
+  <title>Primeiro Formulário com JS</title> <!-- Título exibido na aba do navegador -->
+  <link rel="stylesheet" href="css/style.css" /> <!-- Importa o arquivo de estilos -->
+</head> <!-- Fim do cabeçalho -->
+
+<body> <!-- Corpo do documento: conteúdo visível -->
+  <main class="card"> <!-- Container principal com classe para estilização -->
+    <h1>Cadastre-se</h1> <!-- Título da página -->
+
+    <form id="form"> <!-- Formulário com id para o JS selecionar -->
+      <label for="nome">Nome</label> <!-- Rótulo associado ao input de nome -->
+      <input id="nome" type="text" placeholder="Seu nome"  required/> <!-- Campo de texto (obrigatório) -->
+
+      <label for="email">E-mail</label> <!-- Rótulo associado ao input de e-mail -->
+      <input id="email" type="email" placeholder="exemplo@site.com" required /> <!-- Campo de e-mail (obrigatório) -->
+
+      <button type="submit">Enviar</button> <!-- Botão que dispara o envio do form -->
+    </form> <!-- Fim do formulário -->
+
+    <p id="mensagem" aria-live="polite"></p> <!-- Área para feedback ao usuário, acessível para leitores de tela -->
+  </main> <!-- Fim do container principal -->
+
+ <script src="js/script.js"></script>
+
+</body> <!-- Fim do corpo -->
+</html> <!-- Fim do documento -->
