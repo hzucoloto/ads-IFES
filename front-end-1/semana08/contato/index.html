@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- defer: o script só roda depois que o HTML todo foi lido -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <nav aria-label="Principal">
+      <a href="#">Início</a>
+      <a href="#">Projetos</a>
+      <a href="index.html" aria-current="page">Contato</a>
+    </nav>
+  </header>
+
+  <main class="contato">
+    <h1>Fale comigo</h1>
+    <p>Tem um projeto ou uma dúvida? Preencha o formulário abaixo.</p>
+
+    <!--
+      action = PARA ONDE os dados vão (aqui, uma página de agradecimento)
+      method = COMO vão. Usei "get" só para estudo: os dados aparecem na URL.
+      Num site real, formulário de contato usa "post".
+    -->
+    <form action="obrigado.html" method="get" class="form-contato">
+      <fieldset>
+        <legend>Seus dados</legend>
+
+        <!-- Padrão .campo: label em cima, input embaixo -->
+        <div class="campo">
+          <!-- for="nome" liga este label ao input de id="nome" -->
+          <label for="nome">Nome completo</label>
+          <!-- name="nome" é a CHAVE que viaja na requisição: nome=Maria -->
+          <input type="text" id="nome" name="nome" required minlength="3">
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <!-- type="email" valida o formato e mostra teclado com @ no celular -->
+          <!-- placeholder é EXEMPLO, o nome do campo está no label -->
+          <input type="email" id="email" name="email" required
+                 placeholder="voce@exemplo.com">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sua mensagem</legend>
+
+        <div class="campo">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto" required>
+            <!-- value="" vazio + required = obriga a escolher uma opção real -->
+            <option value="">Selecione...</option>
+            <option value="orcamento">Orçamento de site</option>
+            <option value="parceria">Parceria</option>
+            <option value="duvida">Dúvida</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem (até 500 caracteres)</label>
+          <textarea id="mensagem" name="mensagem" rows="5"
+                    required minlength="10" maxlength="500"></textarea>
+          <small id="contador" class="contador">0/500</small>
+        </div>
+      </fieldset>
+
+      <!-- Label "envolvendo" o input: também conecta, sem precisar de for/id -->
+      <label class="consentimento">
+        <input type="checkbox" name="lgpd" value="sim" required>
+        Autorizo o uso dos meus dados para responder este contato (LGPD)
+      </label>
+
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </main>
+</body>
+</html>

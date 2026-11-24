@@ -1,0 +1,96 @@
+/* ===== Base ===== */
+:root {
+  --cor-principal: #232a60;
+  --cor-destaque: #a6ce39;
+  --cor-erro: #b91c1c;
+  --cor-borda: #ccc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* ===== Topo ===== */
+.topo { background-color: var(--cor-principal); padding: 12px 16px; }
+.topo nav { display: flex; gap: 16px; }
+.topo a { color: #fff; text-decoration: none; }
+.topo a[aria-current="page"] { font-weight: 700; text-decoration: underline; }
+
+/* ===== Página de contato ===== */
+.contato {
+  max-width: 560px;   /* formulário estreito é mais fácil de ler */
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+fieldset {
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 0 16px;
+}
+
+legend { font-weight: 700; padding: 0 6px; }
+
+/* ===== Padrão .campo (Flexbox em coluna) ===== */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.campo label { font-weight: 600; }
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 1rem;    /* 16px: abaixo disso o iPhone dá zoom no campo */
+}
+
+/* ===== Feedback visual ===== */
+/* Campo ativo */
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: 2px solid var(--cor-principal);
+  outline-offset: 1px;
+}
+
+/* Erro só DEPOIS que a pessoa mexeu no campo (ou tentou enviar).
+   Com :invalid, os campos obrigatórios já nasceriam vermelhos. */
+.campo input:user-invalid,
+.campo select:user-invalid,
+.campo textarea:user-invalid {
+  border-color: var(--cor-erro);
+}
+
+.contador { color: #666; align-self: flex-end; }
+
+.consentimento {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+button[type="submit"] {
+  background-color: var(--cor-destaque);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover { filter: brightness(0.95); }
